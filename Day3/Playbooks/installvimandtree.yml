@@ -1,0 +1,16 @@
+- name: This playbook will demonstrate use of apt module to install softwares
+  hosts: all
+  become: yes
+  vars:
+     - proxy_conf:
+           http_proxy: http://10.19.16.165:8080
+           https_proxy: https://10.19.16.165:8080
+  
+  tasks:
+    - name: Install vim text editor
+      apt: name=vim state=latest update_cache=yes 
+      #     environment: "{{proxy_conf}}"
+
+    - name: Install tree utility 
+      apt: name=tree state=present update_cache=yes 
+      # environment: "{{proxy_conf}}"
