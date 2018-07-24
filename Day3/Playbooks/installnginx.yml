@@ -5,6 +5,10 @@
              http_proxy: http://10.19.16.165:8080
              https_proxy: http://10.19.16.165:8080
 
+     - greeting_msg: DevOps!
+     - automation_tool: Ansible
+     - provisioner_tool: Docker
+
   tasks:
     - name: Install nginx web server
       apt: name=nginx state=latest update_cache=yes
@@ -13,7 +17,13 @@
     - name: Configure nginx web root folder 
       copy: src=default dest=/etc/nginx/sites-available/default
 
+    - name: Restart the nginx service
+      shell: service nginx restart 
+
     - name: Create nginx web root folder 
       file: path=/var/html state=directory mode=0777
+
+    - name: Deploy a web page inside nginx web server 
+      template: src=index.html.j2 dest=/var/html/index.html
 
 
