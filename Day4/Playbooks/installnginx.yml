@@ -4,9 +4,13 @@
      - greeting_msg: DevOps!
      - automation_tool: Ansible
      - provisioner_tool: Docker
+  vars_files:
+     - proxy_configure_file
+
   tasks:
      - name: Install nginx web server
        apt: name=nginx state=latest update_cache=yes
+       #environment: "{{proxy_conf}}"
 
      - name: Configure nginx web root folder
        copy: src=default dest=/etc/nginx/sites-available
