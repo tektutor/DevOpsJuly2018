@@ -1,0 +1,13 @@
+- name: Demonstrates practical use of loops and demonstrates docker_container ansible module
+  hosts: localhost
+  tasks:
+     - name: Start ubuntu containers
+       docker_container:
+          name: "ubuntu{{item}}"
+          image: tektutor/ansible-ubuntu
+          hostname: "ubuntu{{item}}"
+          ports:
+             - "200{{item}}:22"
+             - "800{{item}}:80"
+          state: started
+       with_sequence: start=1 end=5
