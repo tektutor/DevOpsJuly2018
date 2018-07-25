@@ -1,5 +1,5 @@
 [all]
-ubuntu[1:4]
+ubuntu[1:5]
 
 [dev-servers]
 ubuntu[1:2]
@@ -8,5 +8,5 @@ ubuntu[1:2]
 ubuntu3
 
 [prod-servers]
-ubuntu4
+ubuntu[4:5]
 
