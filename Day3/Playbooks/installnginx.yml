@@ -25,5 +25,3 @@
 
     - name: Deploy a web page inside nginx web server 
       template: src=index.html.j2 dest=/var/html/index.html
-
-
