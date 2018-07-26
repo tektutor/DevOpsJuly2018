@@ -1,2 +1,9 @@
 [all]
 ubuntu[1:5]
+centos[1:5]
+
+[ubuntu]
+ubuntu[1:5]
+
+[centos]
+centos[1:5]
