@@ -1,0 +1,15 @@
+- name: Demonstrates use of dictionary variable
+  hosts: localhost
+  vars:
+    - contacts:
+          Rishi:
+             name: Rishi Kumar Sahay
+             mobile: 123-456-7890
+          Arun:
+             name: ArunRaaj
+             mobile: 232-343-4644
+  tasks:
+    - name: Print the contact details
+      debug: msg="The contact number of {{item.value.name}} is {{item.value.mobile}}"
+      with_dict: "{{contacts}}"
+   

@@ -17,5 +17,3 @@
      apt: name="{{item}}" state=latest update_cache=yes
      with_list: "{{software_packages}}"
      # environment: "{{proxy_conf}}"
-
-
