@@ -9,5 +9,5 @@
           ports:
              - "200{{item}}:22"
              - "800{{item}}:80"
-          state: started
+          state: started 
        with_sequence: start=1 end=5
