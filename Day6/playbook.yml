@@ -8,3 +8,7 @@
   roles:
     - nginx
       #environment: "{{proxy_conf}}"
+
+  pre_tasks:
+    - name: Restart nginx service
+      shell: service nginx restart
