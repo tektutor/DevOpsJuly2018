@@ -1,0 +1,9 @@
+- name: Demonstrates how to access our custom ansible module
+  hosts: localhost
+  tasks:
+     - name: Add two numbers
+       add: firstInput=700 secondInput=300
+       register: output
+
+     - name: Print the result
+       debug: var=output
