@@ -1,0 +1,7 @@
+Today's Agenda
+++++++++++++++++++++++
+1. Ansible Custom Role
+2. Ansible Vault
+3. Ansible Custom Module
+4. Python Basics
+5. Dynamic Inventory
