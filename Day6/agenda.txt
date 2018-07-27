@@ -1,6 +1,6 @@
 Today's Agenda
 ++++++++++++++++++++++
-1. Ansible Custom Role
+1. Ansible Custom Role (Done)
 2. Ansible Vault
 3. Ansible Custom Module
 4. Python Basics
