@@ -1,5 +1,4 @@
 #!/usr/bin/python
-
 class MyClass:
 
     def __init__( self ):
@@ -14,7 +13,6 @@ class MyClass:
     def printValues ( self ):
         print ('Value of x is ' + str ( self.x ) )
         print ('Value of y is ' + str ( self.y ) )
-
 
 def main():
 
