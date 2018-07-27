@@ -1,7 +1,9 @@
 #!/usr/bin/python
 
-def add(firstValue, secondValue):
-    return firstValue + secondValue
+def add(firstValue, secondValue): 
+           print( ' Inside add function ' )
+           return firstValue + secondValue
+
 
 x = 100
 y = 200

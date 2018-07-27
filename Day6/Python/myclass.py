@@ -31,5 +31,3 @@ def main():
     obj1.printValues()
 
 main()
-
-
