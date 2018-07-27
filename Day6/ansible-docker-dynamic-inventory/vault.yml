@@ -1,0 +1,9 @@
+- name: Demonstrates the use of Ansible vault feature
+  hosts: all 
+  vars_files:
+      - contacts.yml
+  tasks:
+    - name: Print the sensitive contact details
+      debug: msg="{{item.value.name}} ==> {{item.value.mobile}}"
+      with_dict: "{{contacts}}"
+

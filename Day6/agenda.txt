@@ -1,7 +1,7 @@
 Today's Agenda
 ++++++++++++++++++++++
 1. Ansible Custom Role (Done)
-2. Ansible Vault
-3. Ansible Custom Module
-4. Python Basics
-5. Dynamic Inventory
+2. Ansible Vault ( Done )
+3. Python Basics
+4. Dynamic Inventory
+5. Ansible Custom Module
