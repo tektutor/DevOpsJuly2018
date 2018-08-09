@@ -1,0 +1,14 @@
+- name: Demonstrate invoking our brand new nginx custom ansible role
+  hosts: all
+  vars:
+    - proxy_conf:
+        http_proxy: http://10.19.16.165:8080
+        https_proxy: http://10.19.16.165:8080
+
+  roles:
+    - nginx
+      #environment: "{{proxy_conf}}"
+
+  pre_tasks:
+    - name: Restart nginx service
+      shell: service nginx restart
